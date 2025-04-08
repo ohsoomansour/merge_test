@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Date: 25.4.8
- * @updated: ##add developer1 branch + develop branch
+ * @updated: ##add developer1 branch + develop branch + main branch
  * */
 @Slf4j
 @RestController
