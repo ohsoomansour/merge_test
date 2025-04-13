@@ -1,0 +1,9 @@
+
+<!DOCTYPE configuration SYSTEM "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <mappers>
+        <!--와일드 카드 적용이 안되고 application.properties에서 적용?
+         <mapper resource="mybatis-mapper/**/*.xml"/> -->
+    </mappers>
+</configuration>
