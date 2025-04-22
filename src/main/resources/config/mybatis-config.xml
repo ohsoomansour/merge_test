@@ -3,7 +3,7 @@
 
 <configuration>
     <mappers>
-        <!--와일드 카드 적용이 안되고 application.properties에서 적용?
+        <!--와일드 카드 적용이 안되고 application.properties에서 적용 4.14확
          <mapper resource="mybatis-mapper/**/*.xml"/> -->
     </mappers>
 </configuration>

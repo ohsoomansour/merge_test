@@ -1,5 +1,7 @@
 package com.mansour.sales.service;
 
+import java.util.Map;
+
 import org.springframework.stereotype.Service;
 
 import com.mansour.sales.dto.SalesInfoModel;
@@ -20,7 +22,7 @@ public class SalesService {
 
 	private final SalesRepository salesRepository;
 	
-	public SalesInfoModel getSalesInfo (int p_seq, String keyword) {
+	public SalesInfoModel getSalesInfo ( String p_seq, Map<String, String> keyword) {
 		return salesRepository.selectSalesInfo(p_seq, keyword);
 	}
 }

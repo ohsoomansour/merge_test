@@ -1,5 +1,7 @@
 package com.mansour.sales.repository;
 
+import java.util.Map;
+
 import org.springframework.stereotype.Repository;
 
 import com.mansour.sales.dto.SalesInfoModel;
@@ -16,7 +18,7 @@ public class SalesRepository {
 
 	private final SalesInfoMapper salesInfoMapper;
 	
-	public SalesInfoModel selectSalesInfo(int p_seq, String keyword) {
+	public SalesInfoModel selectSalesInfo( String p_seq, Map<String, String> keyword) {
 		return salesInfoMapper.selectSalesInfo(p_seq, keyword);
 	}
 }

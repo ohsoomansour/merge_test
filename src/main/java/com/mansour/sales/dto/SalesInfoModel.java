@@ -10,5 +10,8 @@ import lombok.RequiredArgsConstructor;
 @Builder
 public class SalesInfoModel {
 	public int seq; /*시퀀 */
-	public String pName; /*제품 이*/
+	
+	public String product; /*제품 이*/
+	
+	//public String sessionId; /* sessionId */
 }

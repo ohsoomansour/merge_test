@@ -3,8 +3,8 @@
 <mapper namespace="com.mansour.sales.mapper.SalesInfoMapper">
 	<select id="selectSalesInfo" parameterType="map" resultType="com.mansour.sales.dto.SalesInfoModel">
 		SELECT *
-		  FROM MANSOUR.MANSOUR_MALL_SALES
+		  FROM OSOOMANSOUR.MANSOUR_MALL_SALES
 		 WHERE SEQ = #{pSeq}
-		   AND P_NAME LIKE '%' || #{pName} || '%'
+		   AND PRODUCT LIKE '%' || #{pName.keyword} || '%'
 	</select>
 </mapper>

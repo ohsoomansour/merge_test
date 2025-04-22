@@ -9,5 +9,5 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Spring Boot Application</title>
 </head>
-<body>Hello, SOOMAN!! </body>
+<body>로그인 성공 JSESSIONID를 확인해봐!</body>
 </html>

@@ -1,5 +1,7 @@
 package com.mansour.sales.controller;
 
+import java.util.Map;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,12 +21,12 @@ public class SalesApiController {
 	
 	private final SalesService salesService;
 	
-	@GetMapping("/item/{p_seq}/search")
+	@GetMapping("/item/{pseq}/search")
 	public SalesInfoModel getSalesInfo(
-	    @PathVariable int p_seq,
-	    @RequestParam String keyword
+	    @PathVariable("pseq") String p_seq,
+	    @RequestParam Map<String, String> keyword
 			) {
-		log.info("p_seq={}, keyword={}", p_seq, keyword);
+		log.info("pseq={}, keyword={}", p_seq, keyword);
 		
 		return salesService.getSalesInfo(p_seq, keyword);
 	}

@@ -3,7 +3,6 @@ package com.mansour.sales.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -11,18 +10,24 @@ import lombok.extern.slf4j.Slf4j;
  * @updated: ##add developer1 branch + develop branch + main branch
  * */
 @Slf4j
-//@RequestMapping("/test")
+@RequestMapping("/handsome")
 @Controller
 public class SalesInfoController {
 	//
 	@GetMapping("/list")
 	public String getItemList() {
 		
-		return "index";
+		return "/index";
 	}
 	
 	@GetMapping("/sales/info")
 	public String getSalesInfo() {
 		return "sales/info";
 	}
+	
+
+	
+	
+	
+	
 }
